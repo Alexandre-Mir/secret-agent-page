@@ -1,0 +1,13 @@
+@use "./variables" as var;
+
+@mixin cut-corners($size: 20px, $bg-color: var.$color-white, $corner-color: transparent) {
+  background: 
+    radial-gradient(circle at top left, $corner-color $size, $bg-color calc($size + 1px)),
+    radial-gradient(circle at bottom left, $corner-color $size, $bg-color calc($size + 1px)),
+    radial-gradient(circle at top right, $corner-color $size, $bg-color calc($size + 1px)),
+    radial-gradient(circle at bottom right, $corner-color $size, $bg-color calc($size + 1px));
+  
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+  background-position: top left, bottom left, top right, bottom right;
+}

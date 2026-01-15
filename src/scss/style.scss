@@ -1,0 +1,57 @@
+@use "./variables" as var;
+@use "./ticket";
+@use "./hero";
+@use "./film-credits";
+@use "./gallery";
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var.$main-font;
+  font-size: 16px;
+}
+
+body {
+  background-color: var.$color-white;
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  padding: 32px;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+.divider {
+  width: 0px;
+  height: 80px;
+  border-left: 2px dashed var.$color-black;
+  background-color: var.$color-white;
+  margin: 10px 0;
+}
+
+.trailer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+      position: relative;
+    width: 975px;
+    height: 548px;
+  overflow: hidden;
+  border-radius: 32px;
+  iframe {
+      position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }}
+}
+
