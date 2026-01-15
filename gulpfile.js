@@ -56,4 +56,5 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.images = images;
 exports.watch = watch;
+exports.build = gulp.parallel(styles, scripts, images);
 exports.default = gulp.parallel(styles, scripts, images, watch);

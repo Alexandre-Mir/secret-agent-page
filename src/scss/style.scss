@@ -3,7 +3,7 @@
 @use "./hero";
 @use "./film-credits";
 @use "./gallery";
-@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+@use "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
 
 * {
   margin: 0;
